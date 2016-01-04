@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleRowTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Title"
+        android:textSize="20sp"
+        android:layout_below="@+id/strut"
+        android:layout_alignParentStart="false" />
+
+    <TextView
+        android:id="@+id/descriptionRowTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Description"
+        android:textSize="15sp"
+        android:layout_below="@+id/titleRowTextView"
+        android:layout_alignParentStart="false"/>
+
+    <View
+        android:id="@+id/strut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/dueDateRowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="Due-date"
+        android:textSize="15sp"
+        android:layout_below="@+id/descriptionRowTextView"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/dueTimeRowTextView"/>
+
+    <TextView
+        android:id="@+id/dueTimeRowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@id/strut"
+        android:layout_alignTop="@+id/dueDateRowTextView"
+        android:gravity="center"
+        android:text="Due-time"
+        android:textSize="15sp"/>
+
+</RelativeLayout>
